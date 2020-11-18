@@ -1,0 +1,24 @@
+<div class="section">
+    <div class="container">
+        <h1 class="title">Búsqueda de canciones</h1>
+        <h2 class="subtitle">Encuentra aquí la letra de tus canciones favoritas</h2>
+        <div class="field">
+            <label for="artist">Artista</label>
+            <div class="control">
+                <input type="text" class="input" #artist placeholder="Ej. Chayanne">
+            </div>
+        </div>
+        <div class="field">
+            <label for="song">Canción</label>
+            <div class="control">
+                <input class="input" type="text" #song placeholder="Ej. Un siglo sin tí">
+            </div>
+        </div>
+        <div class="field is-grouped mt-5">
+            <div class="control">
+                <button (click)="buscaCanciones(artist.value, song.value)" class="button is-primary">Buscar</button>
+            </div>
+        </div>
+        <p class="mt-6" *ngIf="malditaLetra">{{malditaLetra.lyrics}}</p>
+    </div>
+</div>

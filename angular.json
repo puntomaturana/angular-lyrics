@@ -30,7 +30,9 @@
             "styles": [
               "src/styles.scss"
             ],
-            "scripts": []
+            "scripts": [
+
+            ]
           },
           "configurations": {
             "production": {
@@ -123,6 +125,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "apimusic"
+    }
+  },
+  "defaultProject": "apimusic",
+  "cli": {
+    "analytics": "0c5790de-f524-4bfd-9c80-b8581ef2b408"
+  }
 }
